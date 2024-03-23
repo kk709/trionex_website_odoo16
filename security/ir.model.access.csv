@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.trionex.website,access_trionex_website.trionex_website,model_trionex_website,base.group_user,1,1,1,1

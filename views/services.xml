@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_services" name="Trionex Services">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="services"/>
+                <t t-set="website_title">TRIONEX | SERVICES</t>
+
+                <html lang="en">
+
+                    <head>
+                        <meta charset="utf-8"/>
+                        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+                        <title>TRIONEX</title>
+                        <meta content="" name="description"/>
+                        <meta content="" name="keywords"/>
+
+                        <!-- Google Fonts -->
+                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+                              rel="stylesheet"/>
+
+                        <!-- Vendor CSS Files -->
+                        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <link href="/trionex_website/static/src/vendor/bootstrap/css/bootstrap.min.css"
+                              rel="stylesheet"/>
+                        <link rel="stylesheet"
+                              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+                        <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+                              rel="stylesheet"/>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+                        <!-- MDB -->
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+                              rel="stylesheet"/>
+                        <!-- Template Main CSS File -->
+                        <link href="/trionex_website/static/src/css/style.css" rel="stylesheet"/>
+                        <link href="/trionex_website/static/src/css/style1.css" rel="stylesheet"/>
+                        <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+                        <!-- Vendor JS Files -->
+                        <script src="/trionex_website/static/src/vendor/purecounter/purecounter_vanilla.js"></script>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script src="/trionex_website/static/src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+                        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                        <!-- <script src="/trionex_website/static/src/vendor/php-email-form/validate.js"></script> -->
+
+                        <!-- MDB -->
+                        <script type="text/javascript"
+                                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+                        <script>
+                            AOS.init();
+                        </script>
+                    </head>
+
+                    <body>
+                        <!-- ======= Hero Section ======= -->
+                        <section id="custom_services" class="services services-content">
+                            <div class="container h-100">
+                                <div class="row">
+                                    <div class="intro-info order-lg-first order-last text-center">
+                                        <h2>Services That<br/>We Offer
+                                        </h2>
+                                        <div>
+                                            <!--<a href="#map" class="btn-get-started scrollto">Contact Us</a>-->
+                                        </div>
+                                    </div>
+
+                                    <div class=" intro-img order-lg-last order-first">
+                                        <!--<img src="assets/img/our-services.png" alt="" class="img-fluid animated">-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- End Hero -->
+
+
+                        <section class="services_ec">
+                            <div class="mt-5 mb-5 container fullwidth">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <!-- Tab navs -->
+                                        <div
+                                                class="nav flex-column nav-pills text-center"
+                                                id="v-pills-tab"
+                                                role="tablist"
+                                                aria-orientation="vertical">
+                                            <a
+                                                    class="nav-link active hover"
+                                                    id="erp_solutions-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#erp_solutions"
+                                                    role="tab"
+                                                    aria-controls="erp_solutions"
+                                                    aria-selected="true"
+                                            >ERP Solutions
+                                            </a>
+                                            <a
+                                                    class="nav-link hover"
+                                                    id="Web_development-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#Web_development"
+                                                    role="tab"
+                                                    aria-controls="Web_development"
+                                                    aria-selected="false"
+                                            >Web Development
+                                            </a>
+                                            <a
+                                                    class="nav-link hover"
+                                                    id="custom_software-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#custom_software"
+                                                    role="tab"
+                                                    aria-controls="custom_software"
+                                                    aria-selected="false"
+                                            >Custom Software
+                                            </a>
+                                            <a
+                                                    class="nav-link hover"
+                                                    id="architechture_design-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#architechture_design"
+                                                    role="tab"
+                                                    aria-controls="architechture_design"
+                                                    aria-selected="false"
+                                            >Architectural Design
+                                            </a>
+
+                                            <a
+                                                    class="nav-link hover"
+                                                    id="network-consultancy-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#network_consultancy"
+                                                    role="tab"
+                                                    aria-controls="network_consultancy"
+                                                    aria-selected="false"
+                                            >Network Consultancy
+                                            </a>
+
+                                            <a
+                                                    class="nav-link hover"
+                                                    id="cloud-web-hosting-tab"
+                                                    data-mdb-toggle="pill"
+                                                    href="#cloud_web_hosting"
+                                                    role="tab"
+                                                    aria-controls="cloud_web_hosting"
+                                                    aria-selected="false"
+                                            >Cloud &amp; Web hosting
+                                            </a>
+                                        </div>
+                                        <!-- Tab navs -->
+                                    </div>
+
+                                    <div class="col-md-9">
+                                        <!-- Tab content -->
+
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="erp_solutions"
+                                                 role="tabpanel" aria-labelledby="erp_solutions-tab">
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">ERP Solutions</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Enterprise Resource Planning (ERP) Solutions
+                                                            </b>
+                                                            Discover the power of efficient workflows with <strong>
+                                                            Trionex
+                                                        </strong> expert Odoo ERP consultation services. Our team of
+                                                            professionals excels in diagnosing and resolving ERP
+                                                            system issues, optimizing your business processes, and
+                                                            aligning your ERP functionalities with your strategic
+                                                            goals. Trust in our experience and in-depth knowledge to
+                                                            ensure your Odoo ERP system is a catalyst for your
+                                                            business growth.
+                                                            In addition, we understand the importance of strategic
+                                                            planning in the successful implementation and use of an
+                                                            ERP system. We work closely with you to understand your
+                                                            business goals, and then align the functionalities of
+                                                            the Odoo ERP system to meet these objectives.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of our ERP solutions are:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>ERP Consultation
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Odoo ERP Training
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Odoo Implementation and
+                                                            Licensing
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Business Automation
+                                                            Consulting
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Odoo Upgrades and Updates
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Custom Module Development
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Integration Services
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Partner Support
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Training and Support
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/enterprise_solutions.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div
+                                              class="tab-pane fade show active "
+                                              id="web_development"
+                                              role="tabpanel"
+                                              aria-labelledby="web_development-tab"
+
+                                            >-->
+                                            <!--<div class="tabssss">
+                                              <div class="tabitems">
+                                                <img src="assets/pics/pics/Dropbox.png" alt="">
+                                                <p>Dropbox</p>
+                                              </div>-->
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="Web_development"
+                                                    role="tabpanel"
+                                                    aria-labelledby="Web_development-tab"
+                                            >
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">Web Development</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Web Development Services
+                                                            </b>
+                                                            At <strong>Trionex</strong>, we believe that a
+                                                            well-crafted website is the foundation of your online
+                                                            success.In today's digital age, a strong online presence
+                                                            is essential for the success of any business. Your
+                                                            website is often the first interaction potential
+                                                            customers have with your brand, making it crucial to
+                                                            leave a lasting impression. Our web development services
+                                                            are tailored to help you build a powerful online
+                                                            presence, reach your target audience, and achieve your
+                                                            business goals.Let us help you make a strong impression
+                                                            and drive business growth through our professional web
+                                                            development services.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of Our Web Development
+                                                                Services:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Customized Web Solutions:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Mobile Responsiveness:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>User-Friendly Design:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Fast Loading Speed:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Search Engine Optimization
+                                                            (SEO):
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Security Measures:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Scalability:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Content Management System
+                                                            (CMS):
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>E-commerce Capabilities:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/web_development3.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="custom_software"
+                                                    role="tabpanel"
+                                                    aria-labelledby="custom_software-tab"
+                                            >
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">Custom Software</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Custom Software Development Services.
+                                                            </b>
+                                                            In today's rapidly evolving business landscape,
+                                                            off-the-shelf software often falls short of meeting the
+                                                            unique needs and challenges of your organization. That's
+                                                            where our custom software development services come into
+                                                            play. We specialize in creating tailored software
+                                                            solutions that empower your business, streamline
+                                                            operations, and drive growth. To Empower your business
+                                                            with custom software designed to fit your unique
+                                                            requirements. Contact <strong>Trionex</strong> today to
+                                                            explore the possibilities and start your journey towards
+                                                            optimized operations and growth.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of our Custom Software Services
+                                                                are:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Tailored to Your Needs:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Increased Efficiency:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Scalability:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Integration Capabilities:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Enhanced Security:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>User-Friendly Interfaces:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Cost-Effective:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Continuous Support:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/custom_software3.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="architechture_design"
+                                                    role="tabpanel"
+                                                    aria-labelledby="architechture_design-tab"
+                                            >
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">Architecture Design</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Software Architecture Design Services
+                                                            </b>
+                                                            The foundation of any successful software project lies
+                                                            in its architecture. At <strong>Trionex</strong>, we
+                                                            offer cutting-edge Architecture Design services to help
+                                                            you create robust, scalable, and efficient software
+                                                            solutions. Our experts specialize in crafting blueprints
+                                                            that lay the groundwork for innovative and sustainable
+                                                            software development. To Unlock the potential of your
+                                                            software projects with a solid foundation. Contact <strong>
+                                                            Trionex
+                                                        </strong> today to explore how our Architecture Design
+                                                            services can lead your software development initiatives
+                                                            to success.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of our Architecture Design
+                                                                Services are:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Strategic Planning:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Efficiency and Scalability:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Cost Optimization:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Technology Selection:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Security and Compliance:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Improved Collaboration:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Reduced Technical Debt:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/architechture_design2.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="network_consultancy"
+                                                    role="tabpanel"
+                                                    aria-labelledby="network-consultancy-tab"
+                                            >
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">Network Consultancy</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Network Consultancy Services
+                                                            </b>
+                                                            At <strong>Trionex</strong>, we understand the critical role
+                                                            that
+                                                            a robust and well-optimized network plays in the success of
+                                                            modern businesses. Our Network Consultancy Services are
+                                                            designed to meet the evolving needs of your organization,
+                                                            offering comprehensive solutions to enhance connectivity,
+                                                            security, and performance.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of our Architecture Design
+                                                                Services are:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Network Design and Architecture:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Infrastructure Assessment:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Security Audits:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Performance Optimization:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Wireless Networking:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Cloud Integration:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/network_consultancy-removebg-preview.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="cloud_web_hosting"
+                                                    role="tabpanel"
+                                                    aria-labelledby="cloud-web-hosting-tab"
+                                            >
+                                                <div class="row">
+                                                    <div class="col-md-7" style="height: 100%; overflow: auto;">
+                                                        <h1 id="service-heading">Cloud &amp; Web hosting</h1>
+                                                        <hr/>
+                                                        <p>
+                                                            <b>
+                                                                Cloud and Web Hosting Services
+                                                            </b>
+                                                            In the digital era, a robust online presence is paramount
+                                                            for the success of any business. At <strong>Trionex</strong>, we
+                                                            offer cutting-edge Cloud and Web Hosting Services to ensure
+                                                            your website and applications are not just hosted but
+                                                            powered with efficiency, security, and scalability.
+                                                        </p>
+                                                        <p>
+                                                            <strong>The key features of our Architecture Design
+                                                                Services are:
+                                                            </strong>
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Web Hosting:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Cloud Hosting:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Managed WordPress Hosting:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>E-commerce Hosting:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Application Hosting:
+                                                        </p>
+                                                        <p><i class="fa fa-check-circle mr-2"
+                                                              style="color:#1bb1dc"></i>Backups and Disaster Recovery:
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <img src="/trionex_website/static/src//img/cloud_web_hosting.png"
+                                                             alt=""
+                                                             class="img-fluid" width="100%%" height="100%%"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Tab content -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- ======= Call To Action Section ======= -->
+                        <section id="call-to-action" class="call-to-action">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9 text-center text-lg-start">
+                                        <h3 class="cta-title">Get in touch with us</h3>
+                                        <p class="cta-text">Do you have a project in your mind? Keep connect us.</p>
+                                    </div>
+                                    <div class="col-lg-3 cta-btn-container text-center">
+                                        <a class="cta-btn align-middle" href="/contact/">Contact Us</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!--  End Call To Action Section -->
+                        <!--                        &lt;!&ndash; end main section&ndash;&gt;-->
+
+                        <!--                        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">-->
+                        <!--                            <i class="bi bi-arrow-up-short"></i>-->
+                        <!--                        </a>-->
+
+                        <!-- Vendor JS Files -->
+                        <script src="/trionex_website/static/src/vendor/purecounter/purecounter_vanilla.js"></script>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script src="/trionex_website/static/src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+                        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                        <!-- <script src="/trionex_website/static/src/vendor/php-email-form/validate.js"></script> -->
+
+                        <!-- MDB -->
+                        <script type="text/javascript"
+                                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+                        <!-- Template Main JS File -->
+                        <!--                        <script>-->
+                        <!--                            function openTabAndMakeActive(tabId) {-->
+                        <!--                            window.location.href = 'services.html#' + tabId;-->
+                        <!--                            }-->
+
+                        <!--                            document.querySelectorAll('#openTabButton').forEach(function(div) {-->
+                        <!--                            div.addEventListener('click', function() {-->
+                        <!--                            const tabId = div.getAttribute('data-tab');-->
+                        <!--                            openTabAndMakeActive(tabId);-->
+                        <!--                            });-->
+                        <!--                            });-->
+                        <!--                        </script>-->
+                        <script>
+                            (function() {
+                            "use strict";
+
+                            <!--                            /**-->
+                            <!--                            * Easy selector helper function-->
+                            <!--                            */-->
+                            const select = (el, all = false) => {
+                            el = el.trim()
+                            if (all) {
+                            return [...document.querySelectorAll(el)]
+                            } else {
+                            return document.querySelector(el)
+                            }
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Easy event listener function-->
+                            <!--                            */-->
+                            const on = (type, el, listener, all = false) => {
+                            let selectEl = select(el, all)
+                            if (selectEl) {
+                            if (all) {
+                            selectEl.forEach(e => e.addEventListener(type, listener))
+                            } else {
+                            selectEl.addEventListener(type, listener)
+                            }
+                            }
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Easy on scroll event listener-->
+                            <!--                            */-->
+                            const onscroll = (el, listener) => {
+                            el.addEventListener('scroll', listener)
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Navbar links active state on scroll-->
+                            <!--                            */-->
+                            let navbarlinks = select('#navbar .scrollto', true)
+                            const navbarlinksActive = () => {
+                            let position = window.scrollY + 200
+                            navbarlinks.forEach(navbarlink => {
+                            if (!navbarlink.hash) return
+                            let section = select(navbarlink.hash)
+                            if (!section) return
+                            if (position >= section.offsetTop &amp;&amp; position&lt;= (section.offsetTop +
+                            section.offsetHeight))
+                            {
+                            navbarlink.classList.add('active')
+                            } else {
+                            navbarlink.classList.remove('active')
+                            }
+                            })
+                            }
+                            window.addEventListener('load', navbarlinksActive)
+                            onscroll(document, navbarlinksActive)
+
+                            <!--                            /**-->
+                            <!--                            * Scrolls to an element with header offset-->
+                            <!--                            */-->
+                            <!--                            const scrollto = (el) => {-->
+                            <!--                            let header = select('#header')-->
+                            <!--                            let offset = header.offsetHeight-->
+
+                            <!--                            if (!header.classList.contains('header-scrolled')) {-->
+                            <!--                            offset -= 20-->
+                            <!--                            }-->
+
+                            <!--                            let elementPos = select(el).offsetTop-->
+                            <!--                            window.scrollTo({-->
+                            <!--                            top: elementPos - offset,-->
+                            <!--                            behavior: 'smooth'-->
+                            <!--                            })-->
+                            <!--                            }-->
+
+                            <!--                            &lt;!&ndash;                            /**&ndash;&gt;-->
+                            <!--                            &lt;!&ndash;                            * Toggle .header-scrolled class to #header when page is scrolled&ndash;&gt;-->
+                            <!--                            &lt;!&ndash;                            */&ndash;&gt;-->
+                            <!--                            let selectHeader = select('#header')-->
+                            <!--                            if (selectHeader) {-->
+                            <!--                            const headerScrolled = () => {-->
+                            <!--                            if (window.scrollY > 100) {-->
+                            <!--                            selectHeader.classList.add('header-scrolled')-->
+                            <!--                            } else {-->
+                            <!--                            selectHeader.classList.remove('header-scrolled')-->
+                            <!--                            }-->
+                            <!--                            }-->
+                            <!--                            window.addEventListener('load', headerScrolled)-->
+                            <!--                            onscroll(document, headerScrolled)-->
+                            <!--                            }-->
+
+                            <!--                            /**-->
+                            <!--                            * Back to top button-->
+                            <!--                            */-->
+                            <!--                            let backtotop = select('.back-to-top')-->
+                            <!--                            if (backtotop) {-->
+                            <!--                            const toggleBacktotop = () => {-->
+                            <!--                            if (window.scrollY > 100) {-->
+                            <!--                            backtotop.classList.add('active')-->
+                            <!--                            } else {-->
+                            <!--                            backtotop.classList.remove('active')-->
+                            <!--                            }-->
+                            <!--                            }-->
+                            <!--                            window.addEventListener('load', toggleBacktotop)-->
+                            <!--                            onscroll(document, toggleBacktotop)-->
+                            <!--                            }-->
+
+                            <!--                            /**-->
+                            <!--                            * Mobile nav toggle-->
+                            <!--                            */-->
+                            on('click', '.mobile-nav-toggle', function(e) {
+                            select('#navbar').classList.toggle('navbar-mobile')
+                            this.classList.toggle('bi-list')
+                            this.classList.toggle('bi-x')
+                            })
+
+                            <!--                            /**-->
+                            <!--                            * Mobile nav dropdowns activate-->
+                            <!--                            */-->
+                            on('click', '.navbar .dropdown > a', function(e) {
+                            if (select('#navbar').classList.contains('navbar-mobile')) {
+                            e.preventDefault()
+                            this.nextElementSibling.classList.toggle('dropdown-active')
+                            }
+                            }, true)
+
+                            <!--                            /**-->
+                            <!--                            * Scrool with ofset on links with a class name .scrollto-->
+                            <!--                            */-->
+                            on('click', '.scrollto', function(e) {
+                            if (select(this.hash)) {
+                            e.preventDefault()
+
+                            let navbar = select('#navbar')
+                            if (navbar.classList.contains('navbar-mobile')) {
+                            navbar.classList.remove('navbar-mobile')
+                            let navbarToggle = select('.mobile-nav-toggle')
+                            navbarToggle.classList.toggle('bi-list')
+                            navbarToggle.classList.toggle('bi-x')
+                            }
+                            scrollto(this.hash)
+                            }
+                            }, true)
+
+                            <!--                            /**-->
+                            <!--                            * Scroll with ofset on page load with hash links in the url-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            if (window.location.hash) {
+                            if (select(window.location.hash)) {
+                            scrollto(window.location.hash)
+                            }
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Porfolio isotope and filter-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            let portfolioContainer = select('.portfolio-container');
+                            if (portfolioContainer) {
+                            let portfolioIsotope = new Isotope(portfolioContainer, {
+                            itemSelector: '.portfolio-item'
+                            });
+
+                            let portfolioFilters = select('#portfolio-flters li', true);
+
+                            on('click', '#portfolio-flters li', function(e) {
+                            e.preventDefault();
+                            portfolioFilters.forEach(function(el) {
+                            el.classList.remove('filter-active');
+                            });
+                            this.classList.add('filter-active');
+
+                            portfolioIsotope.arrange({
+                            filter: this.getAttribute('data-filter')
+                            });
+                            portfolioIsotope.on('arrangeComplete', function() {
+                            AOS.refresh()
+                            });
+                            }, true);
+                            }
+
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Initiate portfolio lightbox-->
+                            <!--                            */-->
+                            const portfolioLightbox = GLightbox({
+                            selector: '.portfolio-lightbox'
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Portfolio details slider-->
+                            <!--                            */-->
+                            new Swiper('.portfolio-details-slider', {
+                            speed: 400,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Testimonials slider-->
+                            <!--                            */-->
+                            new Swiper('.testimonials-slider', {
+                            speed: 600,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            slidesPerView: 'auto',
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Clients Slider-->
+                            <!--                            */-->
+                            new Swiper('.clients-slider', {
+                            speed: 400,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            slidesPerView: 'auto',
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            },
+                            breakpoints: {
+                            320: {
+                            slidesPerView: 2,
+                            spaceBetween: 40
+                            },
+                            480: {
+                            slidesPerView: 3,
+                            spaceBetween: 60
+                            },
+                            640: {
+                            slidesPerView: 4,
+                            spaceBetween: 80
+                            },
+                            992: {
+                            slidesPerView: 6,
+                            spaceBetween: 120
+                            }
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Animation on scroll-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            AOS.init({
+                            duration: 1000,
+                            easing: 'ease-in-out',
+                            once: true,
+                            mirror: false
+                            })
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Initiate Pure Counter-->
+                            <!--                            */-->
+                            new PureCounter();
+
+                            })()
+
+
+                            <!--                            const type = document.querySelector('.type-text');-->
+                            <!--                            if(type) {-->
+
+                            <!--                            let listTexts = ['Multipurpose','Innovative', 'Creative ideas'];-->
+
+                            <!--                            let index = -1;-->
+                            <!--                            let current = 0;-->
+
+                            <!--                            function typeTextFunc() {-->
+                            <!--                            if (current === listTexts.length) {-->
+                            <!--                            current = 0;-->
+                            <!--                            }-->
+                            <!--                            let typeText = setInterval(() => {-->
+                            <!--                            if (index == listTexts[current].length - 1) {-->
+                            <!--                            clearInterval(typeText);-->
+                            <!--                            clearTextFunc();-->
+                            <!--                            } else {-->
+                            <!--                            index++;-->
+                            <!--                            type.textContent += listTexts[current][index];-->
+                            <!--                            }-->
+                            <!--                            }, 150);-->
+                            <!--                            };-->
+
+                            <!--                            function clearTextFunc() {-->
+                            <!--                            let clearText = setInterval(() => {-->
+                            <!--                            if (type.textContent.length == 0) {-->
+                            <!--                            clearInterval(clearText);-->
+                            <!--                            index = -1;-->
+                            <!--                            current++-->
+                            <!--                            typeTextFunc();-->
+                            <!--                            } else {-->
+                            <!--                            type.textContent = type.textContent.slice(0, -1)-->
+                            <!--                            }-->
+                            <!--                            }, 150);-->
+                            <!--                            };-->
+
+                            <!--                            typeTextFunc();-->
+
+                            <!--                            } else {-->
+                            <!--                            console.log("Element with class 'type-text' not found.")-->
+                            <!--                            }-->
+
+
+                            function showDetails(card) {
+                            card.querySelector('.project-details').style.opacity = '1';
+                            card.querySelector('.project-details').style.transform = 'translateY(0)';
+                            }
+
+                            function hideDetails(card) {
+                            card.querySelector('.project-details').style.opacity = '0';
+                            card.querySelector('.project-details').style.transform = 'translateY(-20px)';
+                            }
+                        </script>
+
+                        <script>
+                            const body = document.querySelector("body"),
+                            toggle = document.querySelector(".toggle");
+
+                            let getMode = localStorage.getItem("mode");
+                            if(getMode &amp;&amp; getMode === "dark") {
+                            body.classList.add("dark");
+                            toggle.classList.add("active")
+                            }
+
+                            toggle.addEventListener("click", () => {
+                            body.classList.toggle("dark");
+
+                            if(!body.classList.contains("dark")) {
+                            return localStorage.setItem("mode", "light");
+                            }
+                            localStorage.setItem("mode", "dark");
+
+                            })
+
+                            toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+                        </script>
+                    </body>
+                </html>
+
+
+            </t>
+        </xpath>
+    </template>
+
+    <template id="custom_services_title" inherit_id="web.layout">
+        <xpath expr="//head/title" position="replace">
+
+            <title>
+                <t t-esc="website_title"/>
+            </title>
+        </xpath>
+    </template>
+
+    <template id="custom_services_image" inherit_id="web.layout">
+        <xpath expr="//head/link[@rel='shortcut icon']" position="replace">
+            <link type="image/x-icon" rel="shortcut icon" href="/trionex_website/static/src/img/footer_logo.png"/>
+        </xpath>
+    </template>
+</odoo>

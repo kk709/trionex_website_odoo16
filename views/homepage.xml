@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="custom_homepage" name="Trionex homepage" inherit_id="website.homepage">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="website_title">TRIONEX | HOME</t>
+                <!--                <t t-set="pageName" t-value="homepage"/>-->
+
+                <html lang="en">
+
+                    <head>
+                        <meta charset="utf-8"/>
+                        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+                        <!--                        <title>TRIONEX</title>-->
+                        <meta content="" name="description"/>
+                        <meta content="" name="keywords"/>
+                        <link rel="icon" type="image/x-icon" href="/trionex_website/static/src/img/footer_logo.png"/>
+
+                        <!-- Google Fonts -->
+                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+                              rel="stylesheet"/>
+
+                        <!-- Vendor CSS Files -->
+                        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <link href="/trionex_website/static/src/vendor/bootstrap/css/bootstrap.min.css"
+                              rel="stylesheet"/>
+                        <link rel="stylesheet"
+                              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+                        <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
+                              rel="stylesheet"/>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+                        <!-- MDB -->
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+                              rel="stylesheet"/>
+                        <!-- Template Main CSS File -->
+                        <link href="/trionex_website/static/src/css/style.css" rel="stylesheet"/>
+                        <link href="/trionex_website/static/src/css/style1.css" rel="stylesheet"/>
+                        <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+                        <!-- Vendor JS Files -->
+                        <script src="/trionex_website/static/src/vendor/purecounter/purecounter_vanilla.js"></script>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script src="/trionex_website/static/src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+                        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                        <!-- <script src="/trionex_website/static/src/vendor/php-email-form/validate.js"></script> -->
+
+                        <!-- MDB -->
+                        <script type="text/javascript"
+                                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+                        <script>
+                            AOS.init();
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <main id="main">
+                            <!-- ======= Hero Section ======= -->
+                            <section id="hero" class="clearfix">
+                                <div class="container d-flex h-100">
+                                    <div class="row justify-content-center align-self-center" data-aos="fade-up">
+                                        <div class="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in"
+                                             data-aos-delay="100">
+                                            <h2>Rapid Solutions<br/>for Your <span class="type-text"></span>|
+                                            </h2>
+                                            <div>
+                                                <a href="#clients" class="btn-get-started scrollto">Get Started</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out"
+                                             data-aos-delay="200">
+                                            <img src="/trionex_website/static/src/img/intro-img.svg" class="img-fluid"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Hero -->
+
+                            <!-- ======= Clients Section ======= -->
+                            <section id="clients" class="clients" style="padding: 60px;">
+                                <div class="container">
+                                    <!--                                <h1>Hello</h1>-->
+
+                                    <!--                                <header class="section-header">-->
+                                    <!--                                  <h3 style="color: black;">Our Clients</h3>-->
+                                    <!--                                </header>-->
+
+                                    <div class="clients-slider swiper">
+                                        <div class="swiper-wrapper align-items-center">
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/angular-icon-logo.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/nodejs-logo-8.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/express-js123.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/react12.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/nextjs123-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/typescript1234.svg"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/HTML5_badge.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/bootstrap123.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/Sqlserver.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/295-2954213_jquery-logo-png-transparent-background-png-download-removebg.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/siss1234.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/redux-logo-vector.svg"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/aplifyjs.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/unity-69-logo-png-transparent.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="swiper-pagination" style="display: none;"></div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!--                        End Clients Section-->
+
+                            <!-- start main section-->
+
+                            <!-- ======= About Section ======= -->
+                            <section id="about" class="about">
+
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <!--<div class="about-img" data-aos="fade-right" data-aos-delay="100">-->
+                                            <img src="/trionex_website/static/src/img/pf_5f.png" alt="" width="100%"/>
+                                            <!--</div>-->
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="about-content">
+                                                <h2>About Us</h2>
+                                                <p style="line-height: 20px;">
+                                                    <span style="font-weight: 400;">
+                                                        At <strong>Trionex</strong>, we don't just build software; we
+                                                        cultivate a culture
+                                                        brimming with empathy, innovation, and a deep understanding of
+                                                        our clients' needs. Our team of enthusiastic young engineers is
+                                                        driven by a passion not just to create, but to connect and solve
+                                                        real-world problems.
+                                                    </span>
+                                                </p>
+                                                <p style="line-height: 20px;">
+                                                    <span style="font-weight: 400;">
+                                                        From the very first spark of an idea to the stages of
+                                                        prototyping, designing, development, and rollout, we foster a
+                                                        close-knit collaboration with our clients.
+                                                    </span>
+                                                </p>
+                                                <p style="line-height: 20px;">
+                                                    <span style="font-weight: 400;">
+                                                        Our approach is not just about completing a project; it's about
+                                                        weaving a relationship that extends beyond the implementation
+                                                        process, ensuring that we are there for you at every step.
+                                                    </span>
+                                                </p>
+                                                <p style="line-height: 20px;">
+                                                    <span style="font-weight: 400;">
+                                                        For us, technology is more than a tool; it's a way of thinking
+                                                        and growing. It's the lens through which we view potential,
+                                                        progress, and the power to transform challenges into successes.
+                                                        Our engineers aren't confined to any single technology – they're
+                                                        empowered to explore, innovate, and deliver solutions that truly
+                                                        resonate with your needs.
+                                                    </span>
+                                                </p>
+                                                <p style="line-height: 20px;">
+                                                    <span style="font-weight: 400;">
+
+                                                        With <strong>Trionex</strong>, you're not just investing in
+                                                        technology; you're
+                                                        investing in a relationship that extends beyond the project, in
+                                                        a team that truly cares about your success.
+
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <!-- End About Section -->
+
+                            <!-- ======= Services Section ======= -->
+                            <section id="service" class="service section-bg"></section>
+                            <section id="services" class="services section-bg mt-5">
+                                <div class="container">
+                                    <div class="row g-5">
+
+                                        <div class="section-header">
+                                            <h3>Our Services</h3>
+                                            <!--<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>-->
+                                        </div>
+
+                                        <div id="openTabButton" data-tab="erp_solutions"
+                                             class="col-md-6 col-lg-4 wow bounceInUp">
+                                            <div class="box" id="card1">
+                                                <div class="icon" style="background: #fceef3;">
+                                                    <i class="" style="color: #ff689b;">
+                                                        <img src="/trionex_website/static/src/img/erp_service.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">ERP Solutions</a>
+                                                </h4>
+                                                <p class="description">
+                                                    <!--                                                    <b>Title: Enterprise Resource Planning (ERP) Solutions</b>-->
+                                                    We provide business solutions and Managed IT services to
+                                                    enterprises. We also deliver unified, feature-rich, fully integrated
+                                                    cloud computing solutions built and run in modern and dynamic cloud
+                                                    environments.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="openTabButton" data-tab="Web_development" class="col-md-6 col-lg-4">
+                                            <div class="box" id="card2">
+                                                <div class="icon" style="background: #fff0da;">
+                                                    <i class="" style="color: #e98e06;">
+                                                        <img src="/trionex_website/static/src/img/web_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">Web Development</a>
+                                                </h4>
+                                                <!--                                                <p class="description">-->
+                                                <!--                                                    <span>-->
+                                                <!--                                                        <b>Title: Web Development Services</b>-->
+                                                <!--                                                    </span>-->
+                                                <!--                                                </p>-->
+                                                <p>
+                                                    At Trionex, our team works closely with you to understand your
+                                                    specifications and develop websites that provide an intuitive end
+                                                    user experience. Our ongoing support ensures your website is
+                                                    ever-ready for your users.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div id="openTabButton" data-tab="custom_software" class="col-md-6 col-lg-4">
+                                            <div class="box" id="card3">
+                                                <div class="icon" style="background: #e6fdfc;">
+                                                    <i class="" style="color: #3fcdc7;">
+                                                        <img src="/trionex_website/static/src/img/custom_software_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">Custom Software</a>
+                                                </h4>
+                                                <p class="description">
+                                                    <!--                                                    <b>Title: Custom Software Development</b>-->
+                                                    We offer a wide range of solutions that match your requirements. We
+                                                    build modern and scalable business apps using the latest SDLC tools
+                                                    and agile methodologies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="openTabButton" data-tab="architechture_design"
+                                             class="col-md-6 col-lg-4 wow">
+                                            <div class="box" id="card4">
+                                                <div class="icon" style="background: #e1eeff;">
+                                                    <i class="" style="color: #2282ff;">
+                                                        <img src="/trionex_website/static/src/img/architechture_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">Architectural Design</a>
+                                                </h4>
+                                                <p class="description">
+                                                    <!--                                                    <b>Title: Software Architecture Design Services</b>-->
+                                                    We have certified serverless app solution architects. We design,
+                                                    mold, and manage the solutions in relation to specific business
+                                                    needs and requirements.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div id="openTabButton" data-tab="architechture_design"
+                                             class="col-md-6 col-lg-4 wow">
+                                            <div class="box" id="card5">
+                                                <div class="icon" style="background: #ecebff;">
+                                                    <i class="" style="color: #8660fe;">
+                                                        <img src="/trionex_website/static/src/img/network_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">Network Consultancy</a>
+                                                </h4>
+                                                <p class="description">
+                                                    <!--                                                    <b>Title: Software Architecture Design Services</b>-->
+                                                    We understand the critical role that a robust and well-optimized
+                                                    network plays in the success of modern businesses. Our network
+                                                    consultancy services meet the evolving needs of your organization,
+                                                    offering comprehensive solutions to enhance connectivity, security,
+                                                    and performance.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div id="openTabButton" data-tab="architechture_design"
+                                             class="col-md-6 col-lg-4 wow">
+                                            <div class="box" id="card6">
+                                                <div class="icon" style="background: #eafde7;">
+                                                    <i class="" style="color:#41cf2e;">
+                                                        <img src="/trionex_website/static/src/img/cloud_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="title">
+                                                    <a href="/services/">Cloud and Web Hosting</a>
+                                                </h4>
+                                                <p class="description">
+                                                    <!--                                                    <b>Title: Software Architecture Design Services</b>-->
+                                                    In the digital era, a robust online presence is paramount for the
+                                                    success of any business. At Trionex, we offer cutting-edge cloud and
+                                                    web hosting services to ensure your website and applications are not
+                                                    just hosted but powered with efficiency and security.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Services Section -->
+
+                            <!-- ======= Why Us Section ======= -->
+                            <section id="why-us" class="why-us mt-5">
+                                <div class="container-fluid">
+
+                                    <header class="section-header">
+                                        <h3>Why choose us?</h3>
+                                        <p>Choosing <strong>Trionex</strong> means choosing a partner dedicated to your
+                                            success, with a proven track record, a passion for excellence, and a
+                                            commitment to your unique needs. Join the ranks of our satisfied clients and
+                                            experience the difference of working with the best in the industry.
+                                        </p>
+                                    </header>
+
+                                    <div class="row">
+
+                                        <div class="col-lg-12">
+                                            <div class="why-us-img d-flex align-items-center justify-content-center">
+                                                <img src="/trionex_website/static/src/img/chosse.png" alt=""
+                                                     class="img-fluid"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Why Us Section -->
+
+                            <!-- ======= Portfolio Section ======= -->
+                            <section id="portfolio" class="portfolio mt-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <!-- Tab navs -->
+                                            <div
+                                                    class="nav flex-column nav-pills text-center"
+                                                    id="v-pills-tab"
+                                                    role="tablist"
+                                                    aria-orientation="vertical"
+                                            >
+                                                <a
+                                                        class="nav-link active hover"
+                                                        id="v-pills-home-tab"
+                                                        data-mdb-toggle="pill"
+                                                        href="#v-pills-home"
+                                                        role="tab"
+                                                        aria-controls="v-pills-home"
+                                                        aria-selected="true"
+                                                >Web Development
+                                                </a
+                                                >
+                                                <a
+                                                        class="nav-link hover"
+                                                        id="v-pills-profile-tab"
+                                                        data-mdb-toggle="pill"
+                                                        href="#v-pills-profile"
+                                                        role="tab"
+                                                        aria-controls="v-pills-profile"
+                                                        aria-selected="false"
+                                                >ODOO Development
+                                                </a
+                                                >
+                                                <a
+                                                        class="nav-link hover"
+                                                        id="v-pills-messages-tab"
+                                                        data-mdb-toggle="pill"
+                                                        href="#v-pills-messages"
+                                                        role="tab"
+                                                        aria-controls="v-pills-messages"
+                                                        aria-selected="false"
+                                                >ISP Services
+                                                </a
+                                                >
+                                            </div>
+                                            <!-- Tab navs -->
+                                        </div>
+
+                                        <div class="col-md-9">
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div
+                                                        class="tab-pane fade show active "
+                                                        id="v-pills-home"
+                                                        role="tabpanel"
+                                                        aria-labelledby="v-pills-home-tab"
+
+                                                >
+                                                    <div class="tabssss">
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/React-native.png"
+                                                                 alt=""/>
+                                                            <p>React Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/nodejss.png"
+                                                                 alt=""/>
+                                                            <p>Node Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Express02.png"
+                                                                 alt=""/>
+                                                            <p>Express Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Vue-1.png"
+                                                                 alt=""/>
+                                                            <p>Vue Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/reduxx.png"
+                                                                 alt=""/>
+                                                            <p>Redux</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/angular-icon-logo.png"
+                                                                 alt="" style="width: 54%; height: 62%;"/>
+                                                            <p>Angular</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Typescript.png"
+                                                                 alt=""/>
+                                                            <p>TypeScript</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/htmll.png"
+                                                                 alt=""/>
+                                                            <p>HTML5</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Bootstrap-1.png"
+                                                                 alt=""/>
+                                                            <p>Bootstrap</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/amplify-1.png"
+                                                                 alt=""/>
+                                                            <p>Amplify Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/angular-1-1.png"
+                                                                 alt=""/>
+                                                            <p>Toaster Js</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/jqueryy-1.png"
+                                                                 alt=""/>
+                                                            <p>JQuery/ JS</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/SSIS-1-1.png"
+                                                                 alt=""/>
+                                                            <p>SSIS</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/SQL-Server-Reportings-1.png"
+                                                                 alt=""/>
+                                                            <p>SQL Server</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                        class="tab-pane fade"
+                                                        id="v-pills-profile"
+                                                        role="tabpanel"
+                                                        aria-labelledby="v-pills-profile-tab"
+                                                >
+                                                    <div class="tabssss">
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/appointment1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Appointment</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/contact1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Contact</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/crm4.png" alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>CRM</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/sales1.png" alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Sales</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/subscription1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Subscription</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/point_of_sale1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Point Of Sale</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/accounting1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Accounting</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/projects1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Project</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/helpdesk1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Helpdesk</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/website1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Website</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/elearning1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>eLearning</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/surveys1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Surveys</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/purchase1.png"
+                                                                 alt="" width="100px"
+                                                                 height="100px"/>
+                                                            <p>Purchase</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/inventory1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Inventory</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/employees1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Employees</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/attendence1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Attendances</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/recruitment1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Recruitment</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/fleet1.png" alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Fleet</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/expenses1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Expenses</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/repair1.png"
+                                                                 alt=""
+                                                                 width="100px"
+                                                                 height="100px"/>
+                                                            <p>Repair</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade"
+                                                     id="v-pills-messages"
+                                                     role="tabpanel"
+                                                     aria-labelledby="v-pills-messages-tab">
+                                                    <div class="tabssss">
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/juniper_networks-logo_brandlogos.net_ug2yh.png"
+                                                                 alt=""/>
+                                                            <p>Juniper</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/a1dcd23ef3e575cfe3c03e7fda427c07.png"
+                                                                 alt=""/>
+                                                            <p>Huawei</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/cisco-logo-transparent.png"
+                                                                 alt=""/>
+                                                            <p>Cisco</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Fortinet-Logo.wine.png"
+                                                                 alt=""/>
+                                                            <p>Fortinet</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Sophos-Emblem.jpg"
+                                                                 alt=""/>
+                                                            <p>Spohos</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/mikrotik.png"
+                                                                 alt=""/>
+                                                            <p>Mikrotik</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/1200px-PfSense_logo.png"
+                                                                 alt=""/>
+                                                            <p>Pfsense</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/Ubiquiti_Networks-Logo.wine.png"
+                                                                 alt=""/>
+                                                            <p>Ubiquiti</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/kisspng-red-hat-enterprise-linux-7-red-hat-certification-p-linux-5ac8b58e812be3.6515596215231031185291.jpg"
+                                                                 alt=""/>
+                                                            <p>RHEL</p>
+                                                        </div>
+                                                        <div class="tabitems">
+                                                            <img src="/trionex_website/static/src/img/FreeRADIUS-2.png"
+                                                                 alt=""/>
+                                                            <p>Freeradius</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Tab content -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End Portfolio Section -->
+
+                            <!-- ======= Products Section ======= -->
+                            <section id="product" class="products section-bg"></section>
+                            <section id="products" class="products section-bg mt-5">
+                                <div class="container">
+                                    <div class="row g-5">
+
+                                        <div class="section-header">
+                                            <h3>Our Products</h3>
+                                            <!--<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>-->
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card1">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="bi bi-broadcast-pin">
+                                                        <!--                                                        <img src="/trionex_website/static/src/img/erp_service.png"-->
+                                                        <!--                                                             alt="" style="width: 65%; height: 75%;"/>-->
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Broadband Billing System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card2">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="" style="">
+                                                        <img src="/trionex_website/static/src/img/mortarboard.svg"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Learning Management System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card3">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="" style="">
+                                                        <img src="/trionex_website/static/src/img/ev-front.svg"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Energy Management System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--                                        <div class="col-md-6 col-lg-4">-->
+                                        <!--                                            <div class="card" id="card4">-->
+                                        <!--                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">-->
+                                        <!--                                                    <i class="" style="color: #ff689b;">-->
+                                        <!--                                                        <img src="/trionex_website/static/src/img/erp_service.png"-->
+                                        <!--                                                             alt="" style="width: 65%; height: 75%;"/>-->
+                                        <!--                                                    </i>-->
+                                        <!--                                                </div>-->
+                                        <!--                                                <h4 class="card-title">ODOO Specialization &amp; Customization</h4>-->
+                                        <!--                                                &lt;!&ndash;                                                <p class="small-desc">&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    officia deleniti. Expedita iste et illum, quaerat pariatur&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    consequatur&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    eum nihil itaque!&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                </p>&ndash;&gt;-->
+                                        <!--                                                <div class="go-corner">-->
+                                        <!--                                                    &lt;!&ndash;                                                    <div class="go-arrow">→</div>&ndash;&gt;-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card5">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="" style="">
+                                                        <img src="/trionex_website/static/src/img/truck-front.svg"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Tour Management System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card6">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="" style="color: #ff689b;">
+                                                        <img src="/trionex_website/static/src/img/network_services.png"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">ISP Management System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card7">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="" style="">
+                                                        <img src="/trionex_website/static/src/img/car-front.svg"
+                                                             alt="" style="width: 65%; height: 75%;"/>
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Automobile Dealership Management</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card8">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="bi bi-shop" style="">
+                                                        <!--                                                        <img src="/trionex_website/static/src/img/erp_service.png"-->
+                                                        <!--                                                             alt="" style="width: 65%; height: 75%;"/>-->
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Retail &amp; Distribution Management System</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card9">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="bi bi-receipt-cutoff" style="">
+                                                        <!--                                                        <img src="/trionex_website/static/src/img/erp_service.png"-->
+                                                        <!--                                                             alt="" style="width: 65%; height: 75%;"/>-->
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">Medical Billing Solution</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--                                        <div class="col-md-6 col-lg-4">-->
+                                        <!--                                            <div class="card" id="card10">-->
+                                        <!--                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">-->
+                                        <!--                                                    <i class="bi bi-journal-richtext" style="">-->
+                                        <!--                                                        &lt;!&ndash;                                                        <img src="/trionex_website/static/src/img/erp_service.png"&ndash;&gt;-->
+                                        <!--                                                        &lt;!&ndash;                                                             alt="" style="width: 65%; height: 75%;"/>&ndash;&gt;-->
+                                        <!--                                                    </i>-->
+                                        <!--                                                </div>-->
+                                        <!--                                                <h4 class="card-title">Virtual Audit System</h4>-->
+                                        <!--                                                &lt;!&ndash;                                                <p class="small-desc">&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    officia deleniti. Expedita iste et illum, quaerat pariatur&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    consequatur&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                    eum nihil itaque!&ndash;&gt;-->
+                                        <!--                                                &lt;!&ndash;                                                </p>&ndash;&gt;-->
+                                        <!--                                                <div class="go-corner">-->
+                                        <!--                                                    &lt;!&ndash;                                                    <div class="go-arrow">→</div>&ndash;&gt;-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="card" id="card11">
+                                                <div class="icon" style="background: #fceef3; margin-top: -15px;">
+                                                    <i class="bi bi-cart3" style="">
+                                                        <!--                                                        <img src="/trionex_website/static/src/img/erp_service.png"-->
+                                                        <!--                                                             alt="" style="width: 65%; height: 75%;"/>-->
+                                                    </i>
+                                                </div>
+                                                <h4 class="card-title">E-Commerce Management</h4>
+                                                <!--                                                <p class="small-desc">-->
+                                                <!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat-->
+                                                <!--                                                    veritatis nobis saepe itaque rerum nostrum aliquid obcaecati odio-->
+                                                <!--                                                    officia deleniti. Expedita iste et illum, quaerat pariatur-->
+                                                <!--                                                    consequatur-->
+                                                <!--                                                    eum nihil itaque!-->
+                                                <!--                                                </p>-->
+                                                <div class="go-corner">
+                                                    <!--                                                    <div class="go-arrow">→</div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Products Section -->
+
+                            <!-- ======= Clients Section ======= -->
+                            <section id="clients" class="clients mt-5" style="padding: 60px;">
+                                <div class="container">
+                                    <header class="section-header">
+                                        <h3>Our Clients</h3>
+                                        <p>We are very fortunate to have formed excellent partnerships with many of our
+                                            clients.
+                                        </p>
+                                    </header>
+
+                                    <div class="clients-slider swiper">
+                                        <div class="swiper-wrapper align-items-center">
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/act-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/alkhaleej.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/dysin-removebg-preview.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/edlearn.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/honda1-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 100%; height: 100%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/innostark123-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 100%; height: 100%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/legalsquads_logo-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/logicsquad_logo-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/meritcables-removebg-preview.png"
+                                                     class="img-fluid" alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/musheer-removebg-preview.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <!--                                            <div class="swiper-slide">-->
+                                            <!--                                                <img src="/trionex_website/static/src/img/musheer.png"-->
+                                            <!--                                                     class="img-fluid"-->
+                                            <!--                                                     alt="" style="width: 80%; height: 80%;"/>-->
+                                            <!--                                            </div>-->
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/practice care solutions.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/tahweel.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="/trionex_website/static/src/img/Umrah Hub.png"
+                                                     class="img-fluid"
+                                                     alt="" style="width: 80%; height: 80%;"/>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div class="swiper-pagination" style="display: none;"></div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Clients Section-->
+
+                            <!--                             start project section-->
+                            <section id="project" class="project section-bg"></section>
+                            <section id="projects" class="projects section-bg">
+                                <div class="container">
+
+                                    <div class="section-header">
+                                        <h3>Our Projects</h3>
+                                    </div>
+
+                                    <div class="row g-5 mt-2">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="cards">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                        <i class="">
+                                                            <img src="/trionex_website/static/src/img/sblink_project-removebg-preview.png"
+                                                                 alt="" style="width: 28%; margin-top: -25px;"/>
+                                                        </i>
+                                                        <h4>
+                                                            <b>ISP Management System</b>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">
+                                                        <p>Revolutionize your internet service provision with our
+                                                            Odoo-based ISP Management System. Streamline operations,
+                                                            enhance customer experiences, and elevate your ISP business
+                                                            to new heights.
+                                                        </p>
+                                                        <!--                                                        <a href="#" type="button">Read More</a>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="cards">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                        <i class="">
+                                                            <img src="/trionex_website/static/src/img/honda1-removebg-preview.png"
+                                                                 alt="" style="width: 28%; margin-top: -25px;"/>
+                                                        </i>
+                                                        <h4>
+                                                            <b>Dealership Management System</b>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">
+                                                        <p>Transforming the automotive industry, our tailored system
+                                                            integrates, purchase and parts management seamlessly. With
+                                                            real-time inventory and Fleet Management, coupled with
+                                                            enhanced HR features.
+                                                        </p>
+                                                        <!--                                                        <a href="#" type="button">Read More</a>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="cards">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                        <i class="">
+                                                            <img src="/trionex_website/static/src/img/signin_project.png"
+                                                                 alt="" id="signin"
+                                                                 style="width: 75%; margin-top: -25px;"/>
+                                                        </i>
+                                                        <h4>
+                                                            <b>Broadband Billing System</b>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">
+                                                        <p>Transform network management with our Broadband Billing
+                                                            System-powered by secure Radius AAA, real-time bandwidth
+                                                            insights, and dynamic user plans. Effortlessly handle
+                                                            multiple NAS, monitor live users, customizable
+                                                            features for efficient administration.
+                                                        </p>
+                                                        <!--                                                        <a href="#" type="button">Read More</a>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="cards">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                        <i class="">
+                                                            <img src="/trionex_website/static/src/img/nabvi_tours_project.webp"
+                                                                 alt=""
+                                                                 style="width: 30%; margin-top: -25px;"/>
+                                                        </i>
+                                                        <h4>
+                                                            <b>Tourism Management System</b>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">
+                                                        <p>Advance the landscape, our company delivered tailored
+                                                            solutions designed for the Nabvi Tour. Our system ensured
+                                                            streamlined operations and an elevated customer experience,
+                                                            reshaping the landscape of travel services.
+                                                        </p>
+                                                        <!--                                                        <a href="#" type="button">Read More</a>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--                             end project section-->
+
+                            <!-- ======= Testimonials Section ======= -->
+                            <!--                            <section id="testimonials" class="testimonials">-->
+                            <!--                                <div class="container">-->
+
+                            <!--                                    <header class="section-header">-->
+                            <!--                                        <h3>Our Clients</h3>-->
+                            <!--                                        <p>We are very fortunate to have formed excellent partnerships with many of our-->
+                            <!--                                            clients.-->
+                            <!--                                        </p>-->
+                            <!--                                    </header>-->
+
+                            <!--                                    <div class="row justify-content-center">-->
+                            <!--                                        <div class="col-lg-8">-->
+
+                            <!--                                            <div class="testimonials-slider swiper">-->
+                            <!--                                                <div class="swiper-wrapper">-->
+
+                            <!--                                                    <div class="swiper-slide">-->
+                            <!--                                                        <div class="testimonial-item">-->
+                            <!--                                                            <img src="/trionex_website/static/src/img/testimonial-1.jpg"-->
+                            <!--                                                                 class="testimonial-img img-fluid" alt=""/>-->
+                            <!--                                                            <h3>Saul Goodman</h3>-->
+                            <!--                                                            <h4>Ceo &amp; Founder</h4>-->
+                            <!--                                                            <p>-->
+                            <!--                                                                Working with <strong>Trionex</strong> has been a-->
+                            <!--                                                                game-changer for our business. Their IT solutions-->
+                            <!--                                                                transformed our operations, making us more efficient and-->
+                            <!--                                                                secure. The team's expertise, prompt support, and-->
+                            <!--                                                                dedication to our success are truly commendable.-->
+                            <!--                                                            </p>-->
+                            <!--                                                        </div>-->
+                            <!--                                                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+                            <!--                                                    <div class="swiper-slide">-->
+                            <!--                                                        <div class="testimonial-item">-->
+                            <!--                                                            <img src="/trionex_website/static/src/img/testimonial-2.jpg"-->
+                            <!--                                                                 class="testimonial-img img-fluid" alt=""/>-->
+                            <!--                                                            <h3>Sara Wilsson</h3>-->
+                            <!--                                                            <h4>Designer</h4>-->
+                            <!--                                                            <p>-->
+                            <!--                                                                Choosing <strong>Trionex</strong> for our IT needs was-->
+                            <!--                                                                the best decision we ever made. Their tailored solutions-->
+                            <!--                                                                and outstanding customer service have helped us stay-->
+                            <!--                                                                ahead in the competitive tech world. Thanks to them, our-->
+                            <!--                                                                business is thriving!-->
+                            <!--                                                            </p>-->
+                            <!--                                                        </div>-->
+                            <!--                                                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+                            <!--                                                    <div class="swiper-slide">-->
+                            <!--                                                        <div class="testimonial-item">-->
+                            <!--                                                            <img src="/trionex_website/static/src/img/testimonial-3.jpg"-->
+                            <!--                                                                 class="testimonial-img img-fluid" alt=""/>-->
+                            <!--                                                            <h3>Jena Karlis</h3>-->
+                            <!--                                                            <h4>Store Owner</h4>-->
+                            <!--                                                            <p>-->
+                            <!--                                                                We've been a client of <strong>Trionex</strong> for-->
+                            <!--                                                                years, and they've consistently exceeded our-->
+                            <!--                                                                expectations. Their IT services are top-notch, and their-->
+                            <!--                                                                support team is always ready to assist. We couldn't-->
+                            <!--                                                                imagine running our business without them.-->
+                            <!--                                                            </p>-->
+                            <!--                                                        </div>-->
+                            <!--                                                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+                            <!--                                                    <div class="swiper-slide">-->
+                            <!--                                                        <div class="testimonial-item">-->
+                            <!--                                                            <img src="/trionex_website/static/src/img/testimonial-4.jpg"-->
+                            <!--                                                                 class="testimonial-img img-fluid" alt=""/>-->
+                            <!--                                                            <h3>Matt Brandon</h3>-->
+                            <!--                                                            <h4>Freelancer</h4>-->
+                            <!--                                                            <p>-->
+                            <!--                                                                I can recommend <strong>Trionex</strong> for their IT-->
+                            <!--                                                                services have streamlined our processes, increased-->
+                            <!--                                                                productivity, and ensured our data's safety. The team is-->
+                            <!--                                                                highly knowledgeable and responsive, providing us with-->
+                            <!--                                                                peace of mind.-->
+                            <!--                                                            </p>-->
+                            <!--                                                        </div>-->
+                            <!--                                                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+                            <!--                                                </div>-->
+                            <!--                                                <div class="swiper-pagination"></div>-->
+                            <!--                                            </div>-->
+                            <!--                                        </div>-->
+                            <!--                                    </div>-->
+
+                            <!--                                </div>-->
+                            <!--                            </section>-->
+                            <!-- End Testimonials Section -->
+
+                            <!-- ======= Call To Action Section ======= -->
+                            <section id="call-to-action" class="call-to-action">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-9 text-center text-lg-start">
+                                            <h3 class="cta-title">Get in touch with us</h3>
+                                            <p class="cta-text">Talk to our experts and Improve your current business
+                                                growth!
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-3 cta-btn-container text-center">
+                                            <a class="cta-btn align-middle" href="/contact/">Contact Us</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!--  End Call To Action Section -->
+
+                        </main>
+                        <!--                        &lt;!&ndash; end main section&ndash;&gt;-->
+
+                        <!--                        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">-->
+                        <!--                            <i class="bi bi-arrow-up-short"></i>-->
+                        <!--                        </a>-->
+
+                        <!-- Vendor JS Files -->
+                        <script src="/trionex_website/static/src/vendor/purecounter/purecounter_vanilla.js"></script>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script src="/trionex_website/static/src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+                        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                        <!-- <script src="/trionex_website/static/src/vendor/php-email-form/validate.js"></script> -->
+
+                        <!-- MDB -->
+                        <script type="text/javascript"
+                                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+                        <!-- Template Main JS File -->
+                        <script>
+                            (function() {
+                            "use strict";
+
+                            <!--                            /**-->
+                            <!--                            * Easy selector helper function-->
+                            <!--                            */-->
+                            const select = (el, all = false) => {
+                            el = el.trim()
+                            if (all) {
+                            return [...document.querySelectorAll(el)]
+                            } else {
+                            return document.querySelector(el)
+                            }
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Easy event listener function-->
+                            <!--                            */-->
+                            const on = (type, el, listener, all = false) => {
+                            let selectEl = select(el, all)
+                            if (selectEl) {
+                            if (all) {
+                            selectEl.forEach(e => e.addEventListener(type, listener))
+                            } else {
+                            selectEl.addEventListener(type, listener)
+                            }
+                            }
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Easy on scroll event listener-->
+                            <!--                            */-->
+                            const onscroll = (el, listener) => {
+                            el.addEventListener('scroll', listener)
+                            }
+
+                            <!--                            /**-->
+                            <!--                            * Navbar links active state on scroll-->
+                            <!--                            */-->
+                            let navbarlinks = select('#navbar .scrollto', true)
+                            const navbarlinksActive = () => {
+                            let position = window.scrollY + 200
+                            navbarlinks.forEach(navbarlink => {
+                            if (!navbarlink.hash) return
+                            let section = select(navbarlink.hash)
+                            if (!section) return
+                            if (position >= section.offsetTop &amp;&amp; position&lt;= (section.offsetTop +
+                            section.offsetHeight))
+                            {
+                            navbarlink.classList.add('active')
+                            } else {
+                            navbarlink.classList.remove('active')
+                            }
+                            })
+                            }
+                            window.addEventListener('load', navbarlinksActive)
+                            onscroll(document, navbarlinksActive)
+
+                            <!--                            /**-->
+                            <!--                            * Scrolls to an element with header offset-->
+                            <!--                            */-->
+                            <!--                            const scrollto = (el) => {-->
+                            <!--                            let header = select('#header')-->
+                            <!--                            let offset = header.offsetHeight-->
+
+                            <!--                            if (!header.classList.contains('header-scrolled')) {-->
+                            <!--                            offset -= 20-->
+                            <!--                            }-->
+
+                            <!--                            let elementPos = select(el).offsetTop-->
+                            <!--                            window.scrollTo({-->
+                            <!--                            top: elementPos - offset,-->
+                            <!--                            behavior: 'smooth'-->
+                            <!--                            })-->
+                            <!--                            }-->
+
+                            <!--                            &lt;!&ndash;                            /**&ndash;&gt;-->
+                            <!--                            &lt;!&ndash;                            * Toggle .header-scrolled class to #header when page is scrolled&ndash;&gt;-->
+                            <!--                            &lt;!&ndash;                            */&ndash;&gt;-->
+                            <!--                            let selectHeader = select('#header')-->
+                            <!--                            if (selectHeader) {-->
+                            <!--                            const headerScrolled = () => {-->
+                            <!--                            if (window.scrollY > 100) {-->
+                            <!--                            selectHeader.classList.add('header-scrolled')-->
+                            <!--                            } else {-->
+                            <!--                            selectHeader.classList.remove('header-scrolled')-->
+                            <!--                            }-->
+                            <!--                            }-->
+                            <!--                            window.addEventListener('load', headerScrolled)-->
+                            <!--                            onscroll(document, headerScrolled)-->
+                            <!--                            }-->
+
+                            <!--                            /**-->
+                            <!--                            * Back to top button-->
+                            <!--                            */-->
+                            <!--                            let backtotop = select('.back-to-top')-->
+                            <!--                            if (backtotop) {-->
+                            <!--                            const toggleBacktotop = () => {-->
+                            <!--                            if (window.scrollY > 100) {-->
+                            <!--                            backtotop.classList.add('active')-->
+                            <!--                            } else {-->
+                            <!--                            backtotop.classList.remove('active')-->
+                            <!--                            }-->
+                            <!--                            }-->
+                            <!--                            window.addEventListener('load', toggleBacktotop)-->
+                            <!--                            onscroll(document, toggleBacktotop)-->
+                            <!--                            }-->
+
+                            <!--                            /**-->
+                            <!--                            * Mobile nav toggle-->
+                            <!--                            */-->
+                            on('click', '.mobile-nav-toggle', function(e) {
+                            select('#navbar').classList.toggle('navbar-mobile')
+                            this.classList.toggle('bi-list')
+                            this.classList.toggle('bi-x')
+                            })
+
+                            <!--                            /**-->
+                            <!--                            * Mobile nav dropdowns activate-->
+                            <!--                            */-->
+                            on('click', '.navbar .dropdown > a', function(e) {
+                            if (select('#navbar').classList.contains('navbar-mobile')) {
+                            e.preventDefault()
+                            this.nextElementSibling.classList.toggle('dropdown-active')
+                            }
+                            }, true)
+
+                            <!--                            /**-->
+                            <!--                            * Scrool with ofset on links with a class name .scrollto-->
+                            <!--                            */-->
+                            on('click', '.scrollto', function(e) {
+                            if (select(this.hash)) {
+                            e.preventDefault()
+
+                            let navbar = select('#navbar')
+                            if (navbar.classList.contains('navbar-mobile')) {
+                            navbar.classList.remove('navbar-mobile')
+                            let navbarToggle = select('.mobile-nav-toggle')
+                            navbarToggle.classList.toggle('bi-list')
+                            navbarToggle.classList.toggle('bi-x')
+                            }
+                            scrollto(this.hash)
+                            }
+                            }, true)
+
+                            <!--                            /**-->
+                            <!--                            * Scroll with ofset on page load with hash links in the url-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            if (window.location.hash) {
+                            if (select(window.location.hash)) {
+                            scrollto(window.location.hash)
+                            }
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Porfolio isotope and filter-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            let portfolioContainer = select('.portfolio-container');
+                            if (portfolioContainer) {
+                            let portfolioIsotope = new Isotope(portfolioContainer, {
+                            itemSelector: '.portfolio-item'
+                            });
+
+                            let portfolioFilters = select('#portfolio-flters li', true);
+
+                            on('click', '#portfolio-flters li', function(e) {
+                            e.preventDefault();
+                            portfolioFilters.forEach(function(el) {
+                            el.classList.remove('filter-active');
+                            });
+                            this.classList.add('filter-active');
+
+                            portfolioIsotope.arrange({
+                            filter: this.getAttribute('data-filter')
+                            });
+                            portfolioIsotope.on('arrangeComplete', function() {
+                            AOS.refresh()
+                            });
+                            }, true);
+                            }
+
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Initiate portfolio lightbox-->
+                            <!--                            */-->
+                            const portfolioLightbox = GLightbox({
+                            selector: '.portfolio-lightbox'
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Portfolio details slider-->
+                            <!--                            */-->
+                            new Swiper('.portfolio-details-slider', {
+                            speed: 400,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Testimonials slider-->
+                            <!--                            */-->
+                            new Swiper('.testimonials-slider', {
+                            speed: 600,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            slidesPerView: 'auto',
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Clients Slider-->
+                            <!--                            */-->
+                            new Swiper('.clients-slider', {
+                            speed: 400,
+                            loop: true,
+                            autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                            },
+                            slidesPerView: 'auto',
+                            pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                            clickable: true
+                            },
+                            breakpoints: {
+                            320: {
+                            slidesPerView: 2,
+                            spaceBetween: 40
+                            },
+                            480: {
+                            slidesPerView: 3,
+                            spaceBetween: 60
+                            },
+                            640: {
+                            slidesPerView: 4,
+                            spaceBetween: 80
+                            },
+                            992: {
+                            slidesPerView: 6,
+                            spaceBetween: 120
+                            }
+                            }
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Animation on scroll-->
+                            <!--                            */-->
+                            window.addEventListener('load', () => {
+                            AOS.init({
+                            duration: 1000,
+                            easing: 'ease-in-out',
+                            once: true,
+                            mirror: false
+                            })
+                            });
+
+                            <!--                            /**-->
+                            <!--                            * Initiate Pure Counter-->
+                            <!--                            */-->
+                            new PureCounter();
+
+                            })()
+
+
+                            const type = document.querySelector('.type-text');
+                            if(type) {
+
+                            let listTexts = ['Multipurpose','Innovative', 'Creative ideas'];
+
+                            let index = -1;
+                            let current = 0;
+
+                            function typeTextFunc() {
+                            if (current === listTexts.length) {
+                            current = 0;
+                            }
+                            let typeText = setInterval(() => {
+                            if (index == listTexts[current].length - 1) {
+                            clearInterval(typeText);
+                            clearTextFunc();
+                            } else {
+                            index++;
+                            type.textContent += listTexts[current][index];
+                            }
+                            }, 150);
+                            };
+
+                            function clearTextFunc() {
+                            let clearText = setInterval(() => {
+                            if (type.textContent.length == 0) {
+                            clearInterval(clearText);
+                            index = -1;
+                            current++
+                            typeTextFunc();
+                            } else {
+                            type.textContent = type.textContent.slice(0, -1)
+                            }
+                            }, 150);
+                            };
+
+                            typeTextFunc();
+
+                            } else {
+                            console.log("Element with class 'type-text' not found.")
+                            }
+
+
+                            function showDetails(card) {
+                            card.querySelector('.project-details').style.opacity = '1';
+                            card.querySelector('.project-details').style.transform = 'translateY(0)';
+                            }
+
+                            function hideDetails(card) {
+                            card.querySelector('.project-details').style.opacity = '0';
+                            card.querySelector('.project-details').style.transform = 'translateY(-20px)';
+                            }
+                        </script>
+
+                        <script>
+                            const body = document.querySelector("body"),
+                            toggle = document.querySelector(".toggle");
+
+                            let getMode = localStorage.getItem("mode");
+                            if(getMode &amp;&amp; getMode === "dark") {
+                            body.classList.add("dark");
+                            toggle.classList.add("active")
+                            }
+
+                            toggle.addEventListener("click", () => {
+                            body.classList.toggle("dark");
+
+                            if(!body.classList.contains("dark")) {
+                            return localStorage.setItem("mode", "light");
+                            }
+                            localStorage.setItem("mode", "dark");
+
+                            })
+
+                            toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+                        </script>
+                    </body>
+                </html>
+
+
+            </t>
+        </xpath>
+
+
+    </template>
+
+    <template id="custom_home_title" inherit_id="web.layout">
+        <xpath expr="//head/title" position="replace">
+
+            <title>
+                <t t-esc="website_title"/>
+            </title>
+        </xpath>
+    </template>
+    <template id="custom_image" inherit_id="web.layout">
+        <xpath expr="//head/link[@rel='shortcut icon']" position="replace">
+            <link type="image/x-icon" rel="shortcut icon" href="/trionex_website/static/src/img/footer_logo.png"/>
+        </xpath>
+    </template>
+</odoo>
